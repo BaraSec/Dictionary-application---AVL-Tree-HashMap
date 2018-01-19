@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HashController">
+   <children>
+      <Label layoutX="219.0" layoutY="18.0" text="Hash Table Dictionary">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="272.0" text="Hash function">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="222.0" layoutY="320.0" text="Available Operations">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ListView fx:id="list" layoutX="22.0" layoutY="48.0" prefHeight="168.0" prefWidth="541.0">
+         <effect>
+            <InnerShadow blurType="TWO_PASS_BOX" />
+         </effect></ListView>
+      <Line disable="true" endX="100.0" layoutX="296.0" layoutY="307.0" opacity="0.66" scaleX="3.0" startX="-100.0" strokeMiterLimit="30.0" AnchorPane.leftAnchor="195.5" AnchorPane.rightAnchor="185.5" />
+      <TextField fx:id="hFun" alignment="CENTER" editable="false" layoutX="148.0" layoutY="268.0" prefHeight="25.0" prefWidth="190.0" />
+      <Button layoutX="539.0" layoutY="671.0" mnemonicParsing="false" onAction="#closeHashWorld" text="close" />
+      <Label layoutX="43.0" layoutY="240.0" text="Table size">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tSize" alignment="CENTER" editable="false" layoutX="148.0" layoutY="236.0" prefHeight="25.0" prefWidth="190.0" />
+      <Label layoutX="43.0" layoutY="368.0" text="Search for:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="iWord" layoutX="112.0" layoutY="364.0" prefHeight="25.0" prefWidth="94.0" text="" />
+      <Button layoutX="223.0" layoutY="364.0" mnemonicParsing="false" onAction="#findWord" text="Find" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete" layoutX="271.0" layoutY="364.0" mnemonicParsing="false" onAction="#deleteWord" text="Delete" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="300.0" layoutY="451.0" text="Antonym">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="iAnt" editable="false" layoutX="362.0" layoutY="447.0" />
+      <Label layoutX="62.0" layoutY="451.0" text="Synonym">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="iSyn" editable="false" layoutX="127.0" layoutY="447.0" />
+      <Label layoutX="163.0" layoutY="414.0" text="Meaning(s)">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="iMeanings" editable="false" layoutX="248.0" layoutY="410.0" prefHeight="25.0" prefWidth="229.0" />
+      <Line disable="true" endX="100.0" layoutX="305.0" layoutY="491.0" opacity="0.66" scaleX="2.0" startX="-100.0" stroke="#700000" strokeMiterLimit="30.0" AnchorPane.leftAnchor="185.5" AnchorPane.rightAnchor="185.5" />
+      <Button layoutX="279.0" layoutY="509.0" mnemonicParsing="false" onAction="#insertWord" text="Insert" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="283.0" layoutY="589.0" text="Antonym">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nAnt" layoutX="354.0" layoutY="585.0" prefHeight="25.0" prefWidth="120.0" />
+      <Label layoutX="45.0" layoutY="589.0" text="Synonym">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nSyn" layoutX="125.0" layoutY="585.0" prefHeight="25.0" prefWidth="120.0" />
+      <Label layoutX="45.0" layoutY="552.0" text="Meaning(s)">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nMeanings" layoutX="124.0" layoutY="548.0" prefHeight="25.0" prefWidth="349.0" />
+      <Label layoutX="46.0" layoutY="513.0" text="Insert a new word:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nWord" layoutX="163.0" layoutY="509.0" prefHeight="25.0" prefWidth="94.0" text="" />
+      <Line disable="true" endX="100.0" layoutX="300.0" layoutY="630.0" opacity="0.66" scaleX="2.0" startX="-100.0" stroke="#700000" strokeMiterLimit="30.0" AnchorPane.leftAnchor="185.5" AnchorPane.rightAnchor="185.5" />
+      <Button layoutX="238.0" layoutY="649.0" mnemonicParsing="false" onAction="#export" prefHeight="29.0" prefWidth="105.0" text="Export to file" textFill="#720000" AnchorPane.leftAnchor="238.0" AnchorPane.rightAnchor="239.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

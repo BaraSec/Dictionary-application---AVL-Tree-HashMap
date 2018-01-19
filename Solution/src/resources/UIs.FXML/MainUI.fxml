@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainController">
+   <children>
+      <Label layoutX="257.0" layoutY="42.0" text="Dictionary" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ListView fx:id="list" layoutX="22.0" layoutY="72.0" prefHeight="177.0" prefWidth="541.0">
+         <effect>
+            <InnerShadow blurType="TWO_PASS_BOX" />
+         </effect></ListView>
+      <MenuBar prefHeight="20.0" prefWidth="582.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="load" mnemonicParsing="false" onAction="#fillList" text="Load Data" />
+                  <MenuItem fx:id="export" mnemonicParsing="false" onAction="#export" text="Export to a file" />
+                  <MenuItem fx:id="close" mnemonicParsing="false" onAction="#close" text="Close" />
+            </items>
+          </Menu>
+          <Menu fx:id="avOPMenu" mnemonicParsing="false" text="Available Operations">
+            <items>
+              <MenuItem fx:id="InsertNew" mnemonicParsing="false" onAction="#openInsertWord" text="Insert new word" />
+                  <MenuItem mnemonicParsing="false" onAction="#findWord" text="Find a word" />
+                  <MenuItem mnemonicParsing="false" onAction="#updateWord" text="Update a word" />
+                  <MenuItem mnemonicParsing="false" onAction="#deleteWord" text="Delete a word" />
+            </items>
+          </Menu>
+            <Menu fx:id="htMenu" mnemonicParsing="false" text="Hash Table">
+               <items>
+                  <MenuItem fx:id="genHash" mnemonicParsing="false" onAction="#openHashWorld" text="Generate a Hash Map" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="27.0" layoutY="350.0" text="List all words in lexicographic order that belong to the same first character:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ListView fx:id="list2" layoutX="22.0" layoutY="413.0" prefHeight="177.0" prefWidth="541.0">
+         <effect>
+            <InnerShadow blurType="TWO_PASS_BOX" />
+         </effect>
+      </ListView>
+      <Line disable="true" endX="100.0" layoutX="292.0" layoutY="281.0" opacity="0.66" scaleX="3.0" startX="-100.0" strokeMiterLimit="30.0" />
+      <Label layoutX="255.0" layoutY="297.0" text="Operations" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="character" layoutX="499.0" layoutY="347.0" prefHeight="25.0" prefWidth="73.0" />
+      <Button fx:id="listC" layoutX="456.0" layoutY="379.0" mnemonicParsing="false" onAction="#findListC" text="List" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteLC" layoutX="501.0" layoutY="379.0" mnemonicParsing="false" onAction="#deleteListC" text="Delete All" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

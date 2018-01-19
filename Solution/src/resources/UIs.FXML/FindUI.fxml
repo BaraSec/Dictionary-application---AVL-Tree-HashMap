@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="297.0" prefWidth="503.0" style="-fx-border-color: #720000; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FindController">
+   <children>
+      <Label layoutX="202.0" layoutY="24.0" text="Find a word" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="81.0" text="Word to find">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="iWord" layoutX="144.0" layoutY="78.0" />
+      <Button layoutX="444.0" layoutY="263.0" mnemonicParsing="false" onAction="#closeFindWord" text="close" />
+      <Button fx:id="find" layoutX="145.0" layoutY="117.0" mnemonicParsing="false" onAction="#findWord" text="Find" textFill="#720000">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="32.0" layoutY="254.0" text="Antonym">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="iAnt" editable="false" layoutX="145.0" layoutY="251.0" prefHeight="25.0" prefWidth="190.0" />
+      <Label layoutX="32.0" layoutY="213.0" text="Synonym">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="iSyn" editable="false" layoutX="144.0" layoutY="210.0" prefHeight="25.0" prefWidth="190.0" />
+      <Label layoutX="32.0" layoutY="167.0" text="Meaning(s)">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="iMeanings" editable="false" layoutX="144.0" layoutY="164.0" prefHeight="25.0" prefWidth="323.0" />
+   </children>
+</AnchorPane>
