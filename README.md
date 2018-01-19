@@ -5,6 +5,6 @@ This was my solution to a Data Structures course's thirf project in a CS Bachelo
 The project's description that was sent to the course's students is available at `Description/COMP242 Project3.pdf`.
 
 
-* Screenshot of the application:
+* Screenshot of the application (with its menus (secondery stages) opened):
 
 ![Dictionary application - AVL Tree & HashMap DSs.jpg](https://i.imgur.com/quo2Rwy.jpg)
