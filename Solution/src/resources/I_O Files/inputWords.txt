@@ -1,0 +1,7 @@
+recent: new, modern / up-to-date * old
+abc: a, b / x * s
+ad: a, b / x * s
+da: adsa, db / xds * sds
+av: a, b / x * s
+dv: a, b / x * s
+zyg: a, b / x * s
